@@ -1,11 +1,16 @@
 const input = document.getElementById('todo-input');
 const addBtn = document.getElementById('add-btn');
 const list = document.getElementById('todo-list');
+const counter = document.getElementById('counter');
 
 let todos = JSON.parse(localStorage.getItem('todos')) || [];
 
 function saveTodos() {
   localStorage.setItem('todos', JSON.stringify(todos));
+}
+
+function updateCounter() {
+  counter.textContent = `${todos.length} task${todos.length !== 1 ? 's' : ''}`;
 }
 
 function renderTodos() {
@@ -36,6 +41,8 @@ function renderTodos() {
     li.appendChild(deleteBtn);
     list.appendChild(li);
   });
+
+  updateCounter();
 }
 
 addBtn.addEventListener('click', () => {
@@ -47,4 +54,11 @@ addBtn.addEventListener('click', () => {
   renderTodos();
 });
 
+input.addEventListener('keypress', (e) => {
+  if (e.key === 'Enter') {
+    addBtn.click();
+  }
+});
+
 renderTodos();
+updateCounter();
