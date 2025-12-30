@@ -37,6 +37,8 @@ body::before {
   border-radius: 12px;
   width: 100%;
   max-width: 400px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+  border: 1px solid var(--surface-2);
 }
 
 .input-group {
