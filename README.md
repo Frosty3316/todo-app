@@ -1,17 +1,26 @@
-# TaskNest – To-Do App
+# TaskNest 📝
 
-A clean and interactive to-do application built using vanilla JavaScript.
+A minimal to-do app focused on clarity and smooth interactions.
 
-## Features
-- Add, delete, and complete tasks
-- Keyboard support (Enter key)
-- Persistent storage using localStorage
-- Live task counter
+## ✨ Overview
+TaskNest helps users manage tasks without visual clutter.  
+The UI emphasizes calm colors, spacing, and micro-animations.
 
-## Tech Stack
+## 🧠 Features
+- Add, complete, and delete tasks
+- Keyboard-friendly interactions
+- Animated task entry and completion
+- Persistent task counter
+
+## 🛠️ Tech Stack
 - HTML
 - CSS
 - JavaScript
 
-## Demo
-(Open index.html locally or deploy on GitHub Pages)
+## 🌍 Live Demo
+👉 https://Frosty3316.github.io/todo-app
+
+## 📚 What I Learned
+- DOM manipulation
+- State management without frameworks
+- UX polish using CSS animations
